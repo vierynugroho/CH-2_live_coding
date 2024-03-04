@@ -20,6 +20,7 @@ if (masukUniv == 'mau' || masukUniv == 'MAU') {
 	let nilai = prompt('Berapa nilai akhir SMA/SMK mu?');
 
 	console.log('changeGetUniv: ' + chanceGetUniv);
+
 	// nomor 2
 	if (nilai < 30) {
 		alert('Tidak Mungkin Masuk univ!');
