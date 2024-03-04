@@ -21,4 +21,4 @@
 | **Catatan** |
 | Chapter 2 - Live Coding All Day |
 | **Submission Chapter 2** |  
-[Github Repository](---)|
+[Github Repository - Array Challenge](https://github.com/vierynugroho/javascript-array-challenge)|
