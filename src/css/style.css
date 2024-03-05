@@ -26,8 +26,8 @@ h3 {
 
 /* 05 Maret */
 #boxAnimation {
-    width: 100px;
-    height: 100px;
+    width: 10px;
+    height: 10px;
     background: aqua;
     position: relative;
     animation: move 2s infinite;
@@ -35,21 +35,21 @@ h3 {
 
 @keyframes move {
     from {
-        left: 0px;
+        left: 0%;
     }
 
     to {
-        left: 200px;
+        left: 20%;
     }
 }
 
 @keyframes newMove {
     from {
-        width: 0px;
+        width: 0%;
     }
 
     to {
-        width: 500px;
+        width: 50%;
         background: blue;
     }
 }

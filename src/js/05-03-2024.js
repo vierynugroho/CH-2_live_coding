@@ -7,9 +7,6 @@ title.textContent = 'Selasa';
 let h1 = document.getElementById('selasa');
 h1.style.color = 'red';
 
-let checkbox = document.querySelector('input');
-checkbox.checked = true;
-
 let lengthLi = document.getElementsByTagName('li').length;
 document.getElementsByTagName('li')[2].style.color = 'green';
 
@@ -26,13 +23,19 @@ bing.style.fontSize = '50px';
 document.getElementById('boxAnimation').style.animationName = 'newMove';
 
 // toggle
+let checkbox = document.querySelector('input');
+checkbox.checked = true;
+checkbox.addEventListener('change', function () {
+	if (checkbox.checked) {
+		console.log('Checkbox is checked');
+	} else {
+		console.log('Checkbox is not checked');
+	}
+});
 
-// belum fix
-let btn_toggle = document.querySelector('btn-toggle');
-btn_toggle.classList.toggle('btn-toggle');
+const onSubmit = () => {
+	alert('Submit!');
+};
 
-// console.log(btn_toggle);
-
-// error
 let inputText = document.getElementById('formInputText');
 inputText.setAttribute('disabled', true);
