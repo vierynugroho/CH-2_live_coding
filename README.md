@@ -22,3 +22,4 @@
 | Chapter 2 - Live Coding All Day |
 | **Submission Chapter 2** |  
 [Github Repository - Array Challenge](https://github.com/vierynugroho/javascript-array-challenge)|
+[Github Repository - Challenge CH 2](https://github.com/vierynugroho/f-fsw24001086-km6-vie-aplikasi_rental_mobil-ch2)|
