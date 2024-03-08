@@ -2,11 +2,6 @@
 let button_drum_ = document.querySelectorAll('.drum');
 
 //! Declaration Function
-//? not defined | karena => merepresentasikan this
-// const handleClickDrum = () => {
-// 	alert('This apa handleClick!? not defind!');
-// };
-
 function handleClickDrum(e) {
 	let id_click = this.textContent;
 	let id_keyboard = e.key;
@@ -48,8 +43,6 @@ function handleClickDrum(e) {
 			}
 	}
 
-	//! color effect
-	if (this.textContent) this.style.color = 'white';
 	buttonAnimation(id_click, id_keyboard);
 }
 
@@ -71,6 +64,7 @@ function buttonAnimation(click, keyboard) {
 	}, 100);
 }
 
+//! Event Handler
 for (let i = 0; i < button_drum_.length; i++) {
 	//! click
 	button_drum_[i].addEventListener('click', handleClickDrum);
