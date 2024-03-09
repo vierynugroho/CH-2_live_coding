@@ -49,18 +49,14 @@ function handleClickDrum(e) {
 function buttonAnimation(click, keyboard) {
 	console.log('click: ' + click);
 	console.log('keyboard:' + keyboard);
+
 	let id_click_active = document.querySelector(`.${click}`);
 	let id_keyboard_active = document.querySelector(`.${keyboard}`);
+
 	id_click_active != undefined ? id_click_active.classList.add('pressed', 'white') : id_keyboard_active.classList.add('pressed', 'white');
 
 	setTimeout(() => {
-		if (id_click_active == undefined) {
-			id_keyboard_active.classList.remove('pressed');
-			id_keyboard_active.classList.remove('white');
-		} else {
-			id_click_active.classList.remove('pressed');
-			id_click_active.classList.remove('white');
-		}
+		id_click_active == undefined ? id_keyboard_active.classList.remove('pressed', 'white') : id_click_active.classList.remove('pressed', 'white');
 	}, 100);
 }
 
@@ -69,7 +65,7 @@ for (let i = 0; i < button_drum_.length; i++) {
 	//! click
 	button_drum_[i].addEventListener('click', handleClickDrum);
 
-	//! keyboard click
+	//! keyboard
 	addEventListener('keydown', handleClickDrum);
 }
 
